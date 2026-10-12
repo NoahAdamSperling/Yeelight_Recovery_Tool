@@ -114,24 +114,6 @@ The script rejects all-zero and all-`f` token placeholders rather than saving th
 - Do not commit `yeelight_recovery_info.txt` either. Although it stores a token hash rather than the raw token, it can contain device identifiers, network details, and other information you may not want to publish.
 - Review the script and its output before sharing logs or screenshots. Replace personal network names, IP addresses, device IDs, and MAC addresses with dummy values.
 
-A `.gitignore` for this project should include at least:
-
-```gitignore
-# Local Yeelight credentials and device details
-yeelight_token.txt
-yeelight_recovery_info.txt
-
-# Python artifacts
-__pycache__/
-*.py[cod]
-
-# Local environment and configuration
-.env
-.env.*
-!.env.example
-*.local
-```
-
 ## Limitations
 
 - This utility is designed for Windows and uses Windows networking commands such as `netsh`, `ipconfig`, and PowerShell.
