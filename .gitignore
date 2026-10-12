@@ -1,0 +1,33 @@
+# Yeelight recovery data and sensitive information
+yeelight_token.txt
+yeelight_recovery_info.txt
+
+# Environment variables and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python packaging and build artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
